@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Mulish', sans-serif;
+}
+.navbar{
+  background-color: #fff !important;
+}
+.navbar-brand{
+  font-size: 1.9rem !important;
+  color: #565387 !important;
+}
+.navbar-brand{
+  cursor: pointer;
+}
+.navbar a{
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+.navbar a:hover{
+  color: #3498db !important;
+}
+.active{
+  font-weight: bold !important;
+  border-bottom: 1px solid #565387 !important;
+}
+#Header{
+  min-height: 87vh;
+}
+#Header h1{
+  margin: 0 0 10px 0;
+  font-weight: 700;
+  color: black;
+}
+#Header h2{
+  color: #484848;
+  font-size: 20px;
+}
+.brand-name{
+  color:#3498db;
+}
+.btn-get-started{
+  text-decoration: none !important;
+}
+.btn-get-started{
+  letter-spacing: 1px;
+  display: inline-block;
+  border: 2px solid #3498db;
+  color: #3498db;
+  border-radius: 50px;
+  padding: 15px 25px 15px 25px;
+  transition-duration: .5s;
+}
+.btn-get-started:hover{
+  background-color: #3498db;
+  color: white;
+}
+.header-img{
+  position: relative;
+  text-align: right;
+}
+.img-animate{
+  position: relative;
+  animation: animate 2s ease-in-out alternate-reverse infinite both;
+}
+@keyframes animate {
+  from{
+    transform: translateY(10px);
+  }
+  to{
+    transform: translateY(-10px);
+  }
+}
+@keyframes animate {
+  from{
+    transform: translateY(10px);
+  }
+  to{
+    transform: translateY(-10px);
+  }
+}
+/*-------- Responsive ----------*/
+
+@media (max-width: 991px){
+  #Header{
+    text-align: center;
+  }  
+  #Header .header-img{
+    text-align: center;
+  }
+  #Header .header-img{
+    width: 60%;
+  }
+}
+@media (max-width: 768px){
+  #Header{
+    margin-top: 20px;
+  }
+  #Header h1{
+    font-size: 28px;
+  }
+  #Header h2{
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  #Header .header-img img{
+    width: 100% !important;
+  }
+  #Header .header-img{
+    width: 100% !important;
+  }
+}
+@media (max-width: 382px){
+  
+  #Header .header-img img{
+    width: 100% !important;
+  }
+  #Header .header-img{
+    width: 100% !important;
+  }
+  .navbar-brand{
+    width: 65% !important;
+    margin-right: 0% !important;
+  }
+  .navbar-brand>img{
+    width: 100% !important;
+  }
+  .navbar .navbar-toggler{
+    padding: 5px !important;
+  }
+  .nav_bg>div>div>div div{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    width: 100%;
+  }
+  .nav_bg>div>div{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
