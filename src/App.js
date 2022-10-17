@@ -1,5 +1,5 @@
 import React from 'react'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, Navigate } from 'react-router-dom'
 import Home from './Pages/Home'
 import About from './Pages/About'
 import Contact from './Pages/Contact'
@@ -16,7 +16,7 @@ const App = () => {
     <Route path='/about' element={<About />} />
     <Route path='/contact' element={<Contact />}/>
     <Route path='/service' element={<Service />}/>
-    <Route path='*' exact={true} element={<Error />} />
+    <Route path='*'  element={<Navigate to='/' replace/>} />
     </Routes>
     <Footer/>
     </React.Fragment>
